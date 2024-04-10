@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crown Watch Store</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="Homepage.css" />
+  </head>
+  <body>
+    <header>
+        <div class="logo">Crown</div>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Latest</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="icons">
+          <span class="icon"><i class="fas fa-search"></i></span>
+          <span class="icon"><i class="fas fa-user" onclick="window.location.href='login.html'" id="login"></i></span>
+          <span class="icon"><i class="fas fa-shopping-cart"></i></span>
+          <span class="icon"><i class="fas fa-moon"></i></span>
+        </div>
+    </header>
+
+    <main>
+      <section class="content">
+        <h1>Welcome to Crown Watch Store</h1>
+        <p class="para">
+          Discover the latest trends in watches and find the perfect timepiece
+          for you.
+        </p>
+        <a href="#" class="shop-now"
+          >Shop Now </a>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <p>
+          &copy; <span id="year"></span> Crown Watch Store. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").innerHTML = new Date().getFullYear();
+      <!-- document.getElementById("login").innerHTML =  -->
+    </script>
+  </body>
+</html>
